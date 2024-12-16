@@ -1,0 +1,44 @@
+nav {
+    background-color: #5A67D8; /* Background color */
+    padding: 10px; /* Padding around the nav */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+nav ul li {
+    position: relative; /* Needed for the dropdown */
+}
+
+nav a {
+    color: white; /* Text color */
+    padding: 15px; /* Space around links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for links */
+}
+
+nav a:hover {
+    background-color: #4E55C2; /* Background on hover */
+}
+
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioning for dropdown */
+    background-color: #333; /* Background for dropdown */
+    min-width: 160px; /* Minimum width */
+    z-index: 1; /* Ensure dropdown appears above other elements */
+}
+
+.dropdown a {
+    color: white; /* Text color for dropdown */
+    padding: 12px; /* Space for dropdown links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
